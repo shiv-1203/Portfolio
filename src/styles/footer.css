@@ -1,0 +1,40 @@
+.Footer{
+    background: rgb(0, 0, 59);
+    color:white;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    height: 50px;
+    width:100vw;
+  }
+  .foot{
+    font-size: 3vw;
+    margin: 2vh;
+    max-width: fit-content;
+    margin-left: auto;
+  }
+  .github{
+    display: flex;
+    width: 8vw;
+    height: 8vw;
+    margin: 2vh;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .Linkedin{
+    display: flex;
+    width: 8vw;
+    height: 8vw;
+    margin: 2vh;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 400px) {
+    .github,.Linkedin{
+      width: 28px;
+      height: 28px;
+    }
+    .foot{
+      font-size: 18px;
+    }
+}

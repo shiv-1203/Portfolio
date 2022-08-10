@@ -1,0 +1,39 @@
+
+.Navbar{
+    background: rgb(0, 0, 59);
+    color: white;
+    padding: 15px;
+    padding-left: 2px;
+    position:fixed;
+    top: 0%;
+    width:100%;
+    z-index: 2;
+  }
+  .navelem{
+    text-decoration: none;
+    background: none;
+    color: white;
+    font-size: 3vw;
+    display: inline;
+    margin:4px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  a:active, a:hover{
+    background-color:rgb(31, 126, 158);
+    border-radius: 10px;
+  }
+  .Navbar a.selected{
+    background-color: rgb(1, 139, 127);
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 700px) {
+    .navelem{
+      font-size: 15px;
+    }
+  }

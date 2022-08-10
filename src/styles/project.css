@@ -1,0 +1,198 @@
+
+.projects{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tictactoe{
+    background: url("../Images/tic-tac-toe.png");
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:250px;
+    width:300px;
+    margin-bottom:30px;
+    border:2px solid rgb(0, 0, 59);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .projecttitle{
+    margin-bottom: 30px;
+  }
+  .portfolio{
+    background: url('../Images/portfolio.png');
+    background-size: 100% 100%;
+    height:200px;
+    width:400px;
+  }
+  .todolist{
+    background: url('../Images/todo-website.png');
+    background-size: 100% 100%;
+    height:200px;
+    width:400px;
+    max-width: 400px;
+  }
+  .homepage{
+    background: url('../Images/homepage.png');
+    background-size: 100% 100%;
+    height:200px;
+    width:400px;
+    max-width: 400px;
+  }
+  .job{
+    background: url('../Images/job-portal.png');
+    background-size: 100% 100%;
+    height:200px;
+    width:400px;
+    max-width: 400px;
+  }
+  .displayimage,.displayimage1{
+    display: inline-block;
+    overflow: hidden;
+    margin:15px;
+    border:2px solid rgb(0, 0, 59);
+    border-radius: 10px;
+    color:white;
+    padding:auto;
+    cursor: pointer;
+  }
+  .chrome-extension{
+    background: url("../Images/chrome-extension.png");
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100% 100%;
+    border:2px solid rgb(0, 0, 59);
+    border-radius: 10px;
+    margin-bottom:30px;
+    cursor: pointer;
+    height:250px;
+    width:250px;
+  }
+  .weather{
+    background: url("../Images/weather-report.jpg");
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:400px;
+    width:300px;
+    margin-bottom: 30px;
+    border:2px solid rgb(0, 0, 59);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .hide{
+    display: none;
+  }
+  .displayimage:hover,.chrome-extension:hover,.weather:hover,.tictactoe:hover{
+    box-shadow: 2px 2px 2px 6px rgb(0,0,59);
+    z-index:0;
+  }
+  .displayimage:hover .hide{
+    display:block;
+    backdrop-filter: brightness(20%);
+    font-size: 25px;
+    text-shadow: 2px 2px rgb(22, 141, 181);
+    height:200px;
+    width:400px;
+    text-align:  center;
+    z-index: 1;
+  }
+  .innercontent{
+    padding-top: 60px;
+    text-align: center;
+  }
+  .chrome-extension:hover .hide{
+    color: white;
+    display: inline-block;
+    backdrop-filter: brightness(20%);
+    font-size: 25px;
+    padding-top: 30px;
+    text-shadow: 2px 2px rgb(22, 141, 181);
+    height:250px;
+    width:250px;
+    text-align:  center;
+  }
+  .weather:hover .hide{
+    color: white;
+    display: inline-block;
+    backdrop-filter: brightness(20%);
+    font-size: 25px;
+    padding-top: 70px;
+    text-shadow: 2px 2px rgb(22, 141, 181);
+    height:400px;
+    width:300px;
+    text-align:  center;
+  }
+  .tictactoe:hover .hide{
+    color: white;
+    display: inline-block;
+    backdrop-filter: brightness(20%);
+    font-size: 25px;
+    padding-top: 30px;
+    text-shadow: 2px 2px rgb(22, 141, 181);
+    height:250px;
+    width:300px;
+    text-align:  center;
+  }
+  .description{
+    margin-top:10px;
+    text-shadow: none;
+    font-size: 15px;
+    display: block;
+  }
+  .github1{
+    margin-left: 10px;
+  }
+  @media screen and (max-width:450px) {
+    .displayimage,.portfolio,.todolist,.homepage,.job{
+      height:40vw;
+      width:80vw;
+    }
+    .displayimage:hover .hide{
+      height:40vw;
+      width:80vw;
+    }
+    .innercontent{
+      padding-top: 5vh;
+    }
+    
+  }
+  @media screen and (max-width:350px) {
+    .chrome-extension, .chrome-extension:hover .hide{
+      width:60vw;
+      height:60vw;
+      font-size: 8vw;
+    }
+    .chrome-extension:hover .hide{
+      padding-top: 4vh;
+    }
+    .weather:hover .hide{
+      padding-top: 7vh;
+    }
+    .tictactoe:hover .hide{
+      padding-top: 4vh;
+    }
+    .weather,.weather:hover .hide{
+      width:75vw;
+      height:80vw;
+      font-size: 8vw;
+    }
+    .tictactoe,.tictactoe:hover .hide{
+      width:60vw;
+      height: 60vw;
+      font-size: 8vw;
+    }
+    .displayimage:hover .hide{
+      font-size: 7vw;
+    }
+    .innercontent{
+      padding-top: 3vh;
+      text-align: center;
+    }
+    .description{
+      margin-top:10px;
+      text-shadow: none;
+      font-size: 4vw;
+      display: block;
+    }
+  }

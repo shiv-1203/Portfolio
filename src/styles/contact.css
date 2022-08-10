@@ -1,0 +1,92 @@
+
+.contact{
+    background-color: rgb(0, 0, 59);
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 30px;
+    padding-top: 15px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:-1;
+    max-width: fit-content;
+  }
+  .textarea{
+    height:100px;
+    width:40vw;
+    border-radius: 10px;
+  }
+  input{
+    width:40vw; height:20px; border-radius:10px;
+  }
+  .circle{
+    background-color: rgb(255, 255, 255);
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .submit{
+    display: block;
+    background: rgb(115, 190, 255);
+    color:rgb(0, 0, 59);
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: large;
+    margin-right: auto;
+    max-width: fit-content;
+    font-weight: bolder;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .outcircle{
+    border: 3px solid rgb(0, 0, 59);
+    position:absolute;
+    left:48vw;
+    top:210px;
+    border-radius: 100px;
+    width:30px;
+    height:53px;
+    z-index: 0;
+    animation: mymove1 5s;
+    animation-timing-function: linear;
+  }
+  @keyframes mymove1 {
+    33.34%{
+      transform: rotate(-15deg);
+      height: 62px;
+    }
+    75%{
+      transform: rotate(15deg);
+      height:56px;
+    }
+  }
+  .maincontact{
+    animation: mymove 5s;
+    animation-timing-function: linear;
+  }
+  @keyframes mymove {
+    33.34%{
+      transform: rotate(5deg);
+    }
+    75%{
+      transform: rotate(-5deg);
+    }
+  }
+  @media screen and (max-width:600px) {
+    .contact{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .textarea, input{
+      width:60vw;
+    }
+    .outcircle{
+      left:45vw;
+    }
+  }
