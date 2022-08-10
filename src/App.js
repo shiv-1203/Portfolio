@@ -1,7 +1,7 @@
 import "./styles/Main.css";
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './component/Home';
 import Skills from './component/Skills';
 import profile from './Images/profile.png';
@@ -13,7 +13,7 @@ class App extends React.Component {
   render(){
     return (
       <div className='App'>
-      <Router>
+      <HashRouter>
           <Navbar/>
           <span className='background'></span>
           <img src={profile} alt="profile" className="profile"></img>
@@ -25,7 +25,7 @@ class App extends React.Component {
             <Route path="/workprofiles" element={<Workprofile/>} className="active"/>
           </Routes>
           <Footer/>
-        </Router>
+        </HashRouter>
       </div>
     );
   }
