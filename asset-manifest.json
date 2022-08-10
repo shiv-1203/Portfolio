@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.0a23854e.css",
+    "main.js": "/Portfolio/static/js/main.dfbb832c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/profile.png": "/Portfolio/static/media/profile.c2534814f5724c8ea4f9.png",
+    "static/media/homepage.png": "/Portfolio/static/media/homepage.58b1769229fcbf38915d.png",
+    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.073891b21bf6f5b61970.png",
+    "static/media/job-portal.png": "/Portfolio/static/media/job-portal.29986bba15834c84b9b4.png",
+    "static/media/tic-tac-toe.png": "/Portfolio/static/media/tic-tac-toe.cf0b64de6ed8c0c9ea97.png",
+    "static/media/todo-website.png": "/Portfolio/static/media/todo-website.60382a65c8927093bfdf.png",
+    "static/media/weather-report.jpg": "/Portfolio/static/media/weather-report.670c219675c2ee881350.jpg",
+    "static/media/codechef.png": "/Portfolio/static/media/codechef.21f5ba2fb28558f04e5e.png",
+    "static/media/gfg.png": "/Portfolio/static/media/gfg.16d761c3ad63656a87c6.png",
+    "index.html": "/Portfolio/index.html",
+    "main.0a23854e.css.map": "/Portfolio/static/css/main.0a23854e.css.map",
+    "main.dfbb832c.js.map": "/Portfolio/static/js/main.dfbb832c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a23854e.css",
+    "static/js/main.dfbb832c.js"
+  ]
+}
