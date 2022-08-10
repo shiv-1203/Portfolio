@@ -42,8 +42,8 @@ class Projects extends React.Component {
                 <h1 className="projecttitle">Web Development</h1>
                 <div className="displayimage portfolio" per="Portfolio">
                     <div className="hide"><div className="innercontent">Portfolio
-                        <FaGithub className="github1" onclick={gitportfolio} />
-                        <FaGlobe className="github1" onclick={webportfolio}/>
+                        <FaGithub className="github1" onClick={gitportfolio} />
+                        <FaGlobe className="github1" onClick={webportfolio}/>
                         <div className="description">An online representation of my work samples</div>
                     </div>
                     </div>
@@ -58,8 +58,8 @@ class Projects extends React.Component {
                 </div>
                 <div className="displayimage job" per="Portfolio">
                 <div className="hide"><div className="innercontent">Job-Portal
-                        <FaGithub className="github1" onclick={gitjob}/>
-                        <FaGlobe className="github1" onclick={webjob}/>
+                        <FaGithub className="github1" onClick={gitjob}/>
+                        <FaGlobe className="github1" onClick={webjob}/>
                         <div className="description">A job-portal where data fetched using API's and build using ReactJs</div>
                 </div>
                 </div>
