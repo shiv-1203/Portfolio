@@ -3,7 +3,7 @@ html{
   overflow-x: hidden;
 }
 body{
-  background:linear-gradient(rgb(255,255,255,0.8),rgb(255,255,255,0.8)),url('https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg');
+  background: linear-gradient(to right, lightblue, rgba(173, 216, 230, 0.5), rgba(255, 255, 255, 0));
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,10 +16,9 @@ body{
 
 }
 .background {
-  background:url('https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF2eSUyMHRleHR1cmV8ZW58MHx8MHx8&w=1000&q=80');
-  background-repeat: no-repeat;
+  background: linear-gradient(45deg, #000033, #000000);
   background-size: 100% auto;
-  height: 120px;
+  height: 150px;
   display: block;
   position: absolute;
   width: 100%;
@@ -28,12 +27,11 @@ body{
   margin-top: 50px;
 }
 .profile{
-  margin-top:50px;
-  width:100px;
-  height: 100px;
+  width:120px;
+  height: 120px;
   z-index: 1;
   display: block;
-  margin-top: 120px;
+  margin-top: 130px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;

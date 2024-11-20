@@ -1,92 +1,197 @@
+/* Contact Form Styling */
+.contact {
+  background: linear-gradient(45deg, #000033, #000000);
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 30px;
+  padding-top: 15px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  max-width: fit-content;
+}
 
-.contact{
-    background-color: rgb(0, 0, 59);
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 30px;
-    padding-top: 15px;
-    border-radius: 25px;
+.textarea {
+  height: 100px;
+  width: 40vw;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+input {
+  width: 40vw;
+  height: 30px; /* Adjusted height for better input box spacing */
+  border-radius: 10px;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  display: block;
+  background: orange;
+  color: rgb(0, 0, 59);
+  margin-top: 10px;
+  margin-left: auto;
+  font-size: medium;
+  margin-right: auto;
+  max-width: fit-content;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.outcircle {
+  border: 3px solid rgb(0, 0, 59);
+  position: absolute;
+  left: 48vw;
+  top: 232px;
+  border-radius: 100px;
+  width: 30px;
+  height: 53px;
+  z-index: 0;
+  animation: mymove1 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes mymove1 {
+  33.34% {
+    transform: rotate(-15deg);
+    height: 62px;
+  }
+  75% {
+    transform: rotate(15deg);
+    height: 56px;
+  }
+}
+
+.maincontact {
+  animation: mymove 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  33.34% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Validation Message Styling */
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.error-message {
+  position: absolute;
+  top: 20px; /* Positioned right above the field */
+  right: 4px;
+  background-color: #f8d7da; /* Red background for errors */
+  color: #721c24; /* Dark red text */
+  padding: 3px 6px; /* Smaller padding for a smaller box */
+  font-size: 0.6rem; /* Smaller font size */
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+  display: inline-block;
+}
+
+.error-message::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f8d7da transparent transparent transparent;
+}
+
+/* Success Message */
+.success-message {
+  position: absolute;
+  top: -20px; /* Positioned above the field */
+  right: 0;
+  background-color: #d4edda; /* Green background for success */
+  color: #155724; /* Dark green text */
+  padding: 3px 6px; /* Smaller padding */
+  font-size: 0.5rem; /* Smaller font size */
+  border-radius: 5px;
+  border: 1px solid #c3e6cb;
+  display: inline-block;
+}
+
+.success-message::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #d4edda transparent transparent transparent;
+}
+
+/* Additional Styling */
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit{
+  display: block;
+  background: orange;
+  color:rgb(0, 0, 59);
+  margin-top: 10px;
+  margin-left: auto;
+  font-size: medium;
+  margin-right: auto;
+  max-width: fit-content;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: small;
+  background-color: #d4edda; /* Success color */
+  color: #155724; /* Success text color */
+}
+
+.status.error {
+  background-color: #f8d7da; /* Error color */
+  color: #721c24; /* Error text color */
+}
+
+/* Responsiveness for Smaller Screens */
+@media screen and (max-width: 600px) {
+  .contact {
     margin-left: auto;
     margin-right: auto;
-    z-index:-1;
-    max-width: fit-content;
   }
-  .textarea{
-    height:100px;
-    width:40vw;
-    border-radius: 10px;
+
+  .textarea, input {
+    width: 60vw;
   }
-  input{
-    width:40vw; height:20px; border-radius:10px;
+
+  .outcircle {
+    left: 45vw;
   }
-  .circle{
-    background-color: rgb(255, 255, 255);
-    width:15px;
-    height:15px;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .submit{
-    display: block;
-    background: rgb(115, 190, 255);
-    color:rgb(0, 0, 59);
-    margin-top: 10px;
-    margin-left: auto;
-    font-size: large;
-    margin-right: auto;
-    max-width: fit-content;
-    font-weight: bolder;
-    padding: 10px;
-    height: 40px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  .outcircle{
-    border: 3px solid rgb(0, 0, 59);
-    position:absolute;
-    left:48vw;
-    top:210px;
-    border-radius: 100px;
-    width:30px;
-    height:53px;
-    z-index: 0;
-    animation: mymove1 5s;
-    animation-timing-function: linear;
-  }
-  @keyframes mymove1 {
-    33.34%{
-      transform: rotate(-15deg);
-      height: 62px;
-    }
-    75%{
-      transform: rotate(15deg);
-      height:56px;
-    }
-  }
-  .maincontact{
-    animation: mymove 5s;
-    animation-timing-function: linear;
-  }
-  @keyframes mymove {
-    33.34%{
-      transform: rotate(5deg);
-    }
-    75%{
-      transform: rotate(-5deg);
-    }
-  }
-  @media screen and (max-width:600px) {
-    .contact{
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .textarea, input{
-      width:60vw;
-    }
-    .outcircle{
-      left:45vw;
-    }
-  }
+}

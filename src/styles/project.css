@@ -1,198 +1,181 @@
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  align-items: center;
+  justify-items: center;
+  transition: transform 0.3s ease-in-out;
+}
 
-.projects{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+/* Project Card Styling */
+.project-card {
+  position: relative;
+  background-color: #333; /* Dark background color */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  height: 100%;
+  width: 100%;
+  max-width: 350px;
+  cursor: pointer;
+  position: relative;
+  animation: slideIn 0.5s ease-out; /* Adding animation */
+}
+
+/* Hover Effects */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: #444; /* Darker shade on hover */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Observable Animation on Hover */
+.project-card:hover .project-title,
+.project-card:hover .project-description {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Project Image */
+.project-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Project Info Styling */
+.project-info {
+  padding: 15px;
+  text-align: center;
+  background: linear-gradient(45deg, #000033, #000000); /* Navy blue and black mix */
+  color: white; /* White text color */
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+/* Darker shade on hover */
+.project-card:hover .project-info {
+  background: linear-gradient(135deg, #1a1a1a, #000); /* Darker shade of navy and black */
+}
+
+/* Smaller Project Title */
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white; /* White title text */
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 0.9rem;
+  color: white; /* White text */
+  margin-bottom: 15px;
+  line-height: 1.4;
+  padding: 10px;
+  border-radius: 8px; /* Darker background for description */
+  position: relative;
+  z-index: 1;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-icon {
+  font-size: 1.6rem;
+  color: white; /* White logo color */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects on Icons */
+.project-icon:hover {
+  color: #f4f4f4; /* Slightly lighter hover color */
+  transform: scale(1.2);
+}
+
+/* View More Button */
+.view-more {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-top: 10px;
+  border-top: 2px solid black;
+}
+
+.view-more-button {
+  display: inline-block;
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: #222;
+  transform: scale(1.1);
+}
+
+/* Advanced Animation for Hovering */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  .tictactoe{
-    background: url("../Images/tic-tac-toe.png");
-    background-size: 100% 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height:250px;
-    width:300px;
-    margin-bottom:30px;
-    border:2px solid rgb(0, 0, 59);
-    border-radius: 10px;
-    cursor: pointer;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .projecttitle{
-    margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 1.2rem;
   }
-  .portfolio{
-    background: url('../Images/portfolio.png');
-    background-size: 100% 100%;
-    height:200px;
-    width:400px;
+
+  .project-description {
+    font-size: 0.8rem;
   }
-  .todolist{
-    background: url('../Images/todo-website.png');
-    background-size: 100% 100%;
-    height:200px;
-    width:400px;
-    max-width: 400px;
+
+  .project-card {
+    max-width: 90%;
   }
-  .homepage{
-    background: url('../Images/homepage.png');
-    background-size: 100% 100%;
-    height:200px;
-    width:400px;
-    max-width: 400px;
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1rem;
   }
-  .job{
-    background: url('../Images/job-portal.png');
-    background-size: 100% 100%;
-    height:200px;
-    width:400px;
-    max-width: 400px;
+
+  .project-description {
+    font-size: 0.75rem;
   }
-  .displayimage,.displayimage1{
-    display: inline-block;
-    overflow: hidden;
-    margin:15px;
-    border:2px solid rgb(0, 0, 59);
-    border-radius: 10px;
-    color:white;
-    padding:auto;
-    cursor: pointer;
-  }
-  .chrome-extension{
-    background: url("../Images/chrome-extension.png");
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 100% 100%;
-    border:2px solid rgb(0, 0, 59);
-    border-radius: 10px;
-    margin-bottom:30px;
-    cursor: pointer;
-    height:250px;
-    width:250px;
-  }
-  .weather{
-    background: url("../Images/weather-report.jpg");
-    background-size: 100% 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height:400px;
-    width:300px;
-    margin-bottom: 30px;
-    border:2px solid rgb(0, 0, 59);
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  .hide{
-    display: none;
-  }
-  .displayimage:hover,.chrome-extension:hover,.weather:hover,.tictactoe:hover{
-    box-shadow: 2px 2px 2px 6px rgb(0,0,59);
-    z-index:0;
-  }
-  .displayimage:hover .hide{
-    display:block;
-    backdrop-filter: brightness(20%);
-    font-size: 25px;
-    text-shadow: 2px 2px rgb(22, 141, 181);
-    height:200px;
-    width:400px;
-    text-align:  center;
-    z-index: 1;
-  }
-  .innercontent{
-    padding-top: 60px;
-    text-align: center;
-  }
-  .chrome-extension:hover .hide{
-    color: white;
-    display: inline-block;
-    backdrop-filter: brightness(20%);
-    font-size: 25px;
-    padding-top: 30px;
-    text-shadow: 2px 2px rgb(22, 141, 181);
-    height:250px;
-    width:250px;
-    text-align:  center;
-  }
-  .weather:hover .hide{
-    color: white;
-    display: inline-block;
-    backdrop-filter: brightness(20%);
-    font-size: 25px;
-    padding-top: 70px;
-    text-shadow: 2px 2px rgb(22, 141, 181);
-    height:400px;
-    width:300px;
-    text-align:  center;
-  }
-  .tictactoe:hover .hide{
-    color: white;
-    display: inline-block;
-    backdrop-filter: brightness(20%);
-    font-size: 25px;
-    padding-top: 30px;
-    text-shadow: 2px 2px rgb(22, 141, 181);
-    height:250px;
-    width:300px;
-    text-align:  center;
-  }
-  .description{
-    margin-top:10px;
-    text-shadow: none;
-    font-size: 15px;
-    display: block;
-  }
-  .github1{
-    margin-left: 10px;
-  }
-  @media screen and (max-width:450px) {
-    .displayimage,.portfolio,.todolist,.homepage,.job{
-      height:40vw;
-      width:80vw;
-    }
-    .displayimage:hover .hide{
-      height:40vw;
-      width:80vw;
-    }
-    .innercontent{
-      padding-top: 5vh;
-    }
-    
-  }
-  @media screen and (max-width:350px) {
-    .chrome-extension, .chrome-extension:hover .hide{
-      width:60vw;
-      height:60vw;
-      font-size: 8vw;
-    }
-    .chrome-extension:hover .hide{
-      padding-top: 4vh;
-    }
-    .weather:hover .hide{
-      padding-top: 7vh;
-    }
-    .tictactoe:hover .hide{
-      padding-top: 4vh;
-    }
-    .weather,.weather:hover .hide{
-      width:75vw;
-      height:80vw;
-      font-size: 8vw;
-    }
-    .tictactoe,.tictactoe:hover .hide{
-      width:60vw;
-      height: 60vw;
-      font-size: 8vw;
-    }
-    .displayimage:hover .hide{
-      font-size: 7vw;
-    }
-    .innercontent{
-      padding-top: 3vh;
-      text-align: center;
-    }
-    .description{
-      margin-top:10px;
-      text-shadow: none;
-      font-size: 4vw;
-      display: block;
-    }
-  }
+}

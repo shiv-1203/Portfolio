@@ -21,7 +21,7 @@
     height:0;
     border-style: solid;
     border-width: 0 0 50px 100px;
-    border-color:transparent transparent rgb(27, 27, 163) transparent;
+    border-color:transparent transparent #000033 transparent;
     z-index: 2;
 }
 .animated-mail .top-fold{
@@ -45,7 +45,7 @@
     bottom:0;
     width:100px;
     height:50px;
-    background: rgb(27, 27, 163);
+    background: linear-gradient(45deg, #000033, #000000);
     z-index: 0;
 }
 .animated-mail .left-fold{
@@ -55,7 +55,7 @@
     height:0;
     border-style: solid;
     border-width: 25px 0 25px 50px;
-    border-color: transparent transparent transparent rgb(27, 27, 163);
+    border-color: transparent transparent transparent #000033;
     z-index:2;
 }
 .animated-mail .letter{
@@ -126,6 +126,7 @@
     display:flex;
     margin-left: 90px;
     margin-right: auto;
+    margin-bottom: 200px;
 }
 .worklogo{
     height:40px;
@@ -137,7 +138,7 @@
     }
     .work{
         display: block;
-        margin-left: 45%;
+        margin-left: 50%;
         padding-bottom:80px;
     }
 }

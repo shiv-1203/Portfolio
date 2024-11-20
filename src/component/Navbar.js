@@ -19,8 +19,8 @@ export default function Navbar(){
             <a className="navelem selected" onClick={()=>(navigate("/"))}>Home</a>
             <a className="navelem" onClick={()=>(navigate("/skills"))}>Skills</a>
             <a className="navelem" onClick={()=>(navigate("/projects"))}>Projects</a>
-            <a className="navelem" onClick={()=>(navigate("/contact"))}>Contact</a>
             <a className="navelem" onClick={()=>(navigate("/workprofiles"))}>WorkProfiles</a>
+            <a className="navelem" onClick={()=>(navigate("/contact"))}>Contact</a>
         </div>
     );
 };

@@ -6,12 +6,12 @@ class Home extends React.Component{
         return(
             <div>
                 <div className='content'>
-                    <h1 className="name">Hi There, I'm <span style={{color:"darkblue"}}>Shivam Mudaliar</span></h1><br></br>
-                    <h3> I am a <span style={{color:"darkblue"}}>Web Developer</span></h3><br></br>
-                    <span className='summary'>High-achieving undergraduate student with an aptitude for Web Development. Experienced in 
-                    web development through personal projects. Excited to work and gain real-world experience
-                    <li className="list">I am greatly interested in Artificial Intelligence and Machine Learning.</li>
-                    <li className="list">Currently I am Learning DSA and working on Problem Solving Skills.</li>
+                    <h1 className="name">Hi There, I'm <span style={{color:"#000060"}}>Shivam Mudaliar</span></h1><br></br>
+                    <h3 className="position"> I am a <span style={{color:"#000060"}}>Software Developer</span></h3><br></br>
+                    <span className='summary'>I am an Electronics and Communication Engineering graduate from NIT Surat. As a Software Developer, I thrive in dynamic environments where 
+                        I can leverage my technical expertise to craft innovative and scalable solutions. 
+                        I am passionate about optimizing systems, enhancing user experiences, and contributing to impactful projects that drive business growth. 
+                        With a strong foundation in software development, I am committed to continuous learning and delivering results that exceed expectations.
                     </span>
                 </div>
             </div>

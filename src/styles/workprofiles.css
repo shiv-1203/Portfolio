@@ -3,9 +3,111 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    animation: slideIn 0.5s ease-out;
 }
 
 .envelope{
     height:20px;
     width: 20px;
+    margin-bottom: 10px;
 }
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .timeline-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(228, 149, 3); /* Green circle for year */
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+  }
+  
+  .timeline-year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .experience-role {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .timeline-duration {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Connecting line between icons */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 7px; /* Half of the icon width */
+    top: 1px; /* Adjust to start just below the icon */
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    z-index: 0;
+  }
+  
+  /* Add animation */
+  .timeline-item {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  /* Advanced Animation for Hovering */
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Optional: Add a delay to each item for sequential animation */
+  .timeline-item:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .timeline-item:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .timeline-item:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  .timeline-item:nth-child(4) {
+    animation-delay: 1.2s;
+  }

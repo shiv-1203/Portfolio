@@ -1,9 +1,10 @@
 
 .Navbar{
-    background: rgb(0, 0, 59);
+    background: black;
     color: white;
     padding: 15px;
     padding-left: 2px;
+    text-align: center;
     position:fixed;
     top: 0%;
     width:100%;
@@ -13,9 +14,9 @@
     text-decoration: none;
     background: none;
     color: white;
-    font-size: 3vw;
+    font-size: 12px;
     display: inline;
-    margin:4px;
+    margin:6px;
     margin-top:10px;
     margin-bottom: 10px;
     padding: 2px;
@@ -23,17 +24,18 @@
     padding-right: 5px;
     cursor: pointer;
     text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
   }
-  a:active, a:hover{
-    background-color:rgb(31, 126, 158);
-    border-radius: 10px;
+  .navelem:hover{
+    border-bottom: 2px solid orange;
   }
-  .Navbar a.selected{
-    background-color: rgb(1, 139, 127);
-    border-radius: 10px;
+  .navelem.selected {
+    border-bottom: 2px solid orange;
   }
   @media screen and (min-width: 700px) {
     .navelem{
       font-size: 15px;
+      margin:10px;
     }
   }

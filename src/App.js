@@ -4,7 +4,7 @@ import Footer from './component/Footer';
 import {BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './component/Home';
 import Skills from './component/Skills';
-import profile from './Images/profile.png';
+import profile from './Images/profile.jpg';
 import Contact from './component/Contact';
 import React from 'react';
 import Projects from './component/Projects';
